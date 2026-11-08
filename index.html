@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이율리 | 청각장애아교육 박사 · 초등교사</title>
+    <meta name="description" content="침묵을 넘어 손짓의 언어로, 세상을 그리는 몸짓의 자유로. 청각장애아교육 박사 · 초등교사 · 수어통역 · 훌라 이율리의 홈페이지입니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:url" content="https://yulileeyulilee.github.io/">
+    <meta property="og:site_name" content="이율리">
+    <meta property="og:title" content="이율리 | 청각장애아교육 박사 · 초등교사">
+    <meta property="og:description" content="침묵을 넘어 손짓의 언어로, 세상을 그리는 몸짓의 자유로. 수어 교육 · 연구 · 수어통역 · 훌라">
+    <meta name="twitter:card" content="summary">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         html {
@@ -152,6 +161,93 @@
             margin-right: 0.4rem;
             margin-bottom: 0.4rem;
         }
+
+        .title-link {
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-warm);
+            transition: color 0.2s;
+        }
+
+        .title-link:hover {
+            color: var(--accent-warm);
+        }
+
+        .title-link .bi {
+            font-size: 0.8em;
+            color: var(--accent-warm);
+            margin-left: 0.25rem;
+        }
+
+        .apa-ref {
+            padding-left: 2em;
+            text-indent: -2em;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .apa-ref:last-child { margin-bottom: 0; }
+
+        .video-thumb {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+            aspect-ratio: 9 / 16;
+            border: 0;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent-olive), var(--accent-warm));
+            color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .video-thumb .play-circle {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.92);
+            color: var(--accent-warm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            padding-left: 6px;
+            transition: transform 0.2s;
+        }
+
+        .video-thumb:hover .play-circle { transform: scale(1.08); }
+
+        .video-thumb .video-caption {
+            position: absolute;
+            left: 1.2rem;
+            bottom: 1rem;
+            font-family: 'Gowun Batang', serif;
+            font-size: 1.05rem;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-frame {
+            position: relative;
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+            aspect-ratio: 9 / 16;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-frame iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -280,18 +376,16 @@
         <div class="container">
             <h2 class="section-title">연구 및 교재 (Research & Publications)</h2>
             <div class="row g-4">
-             <div class="col-md-6">
+                <div class="col-md-6">
                     <div class="card-custom">
                         <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-mortarboard me-2 text-warning"></i>학위 논문 실적</h3>
                         <div class="timeline-item">
                             <div class="timeline-date">박사 학위</div>
-                            <div class="fw-bold">청각장애아교육 박사 학위 논문</div>
-                            <small class="text-muted">(논문 제목 업데이트 예정)</small>
+                            <a class="fw-bold title-link" href="https://www.riss.kr/link?id=T17279194" target="_blank" rel="noopener">초등학교 교사의 청각장애 학생 통합교육 지도 경험에 대한 내러티브 탐구<i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">석사 학위</div>
-                            <div class="fw-bold">석사 학위 논문</div>
-                            <small class="text-muted">(논문 제목 업데이트 예정)</small>
+                            <a class="fw-bold title-link" href="https://www.riss.kr/link?id=T15346096" target="_blank" rel="noopener">한국수어로 번역된 2015 개정 교육과정 국어 교과서 단어 및 문장 분석<i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -307,6 +401,24 @@
                             <div class="timeline-date">2022 개정 교육과정</div>
                             <div class="fw-bold">초등 1~2학년군 국정도서 편찬 집필 및 참여</div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-journal-text me-2 text-warning"></i>학술지 논문</h3>
+                        <p class="apa-ref">
+                            <strong>이율리</strong>, 황수미, 이현미 (2023).
+                            <a class="title-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002954062" target="_blank" rel="noopener">초등학교 교사가 인식하는 수어, 청각장애, 농정체성에 대한 관계 연구<i class="bi bi-box-arrow-up-right"></i></a>.
+                            <em>한국청각언어장애교육연구, 14</em>(1), 41–61.
+                            https://doi.org/10.24009/ksehli.2023.14.1.003
+                        </p>
+                        <p class="apa-ref">
+                            이태형, 홍정숙, <strong>이율리</strong>, 홍진희 (2022).
+                            <a class="title-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002877753" target="_blank" rel="noopener">개별화교육계획 실행을 통한 평가와 지원요구에 대한 초등학교 통합학급교사의 인식<i class="bi bi-box-arrow-up-right"></i></a>.
+                            <em>특수아동교육연구, 24</em>(3), 245–272.
+                            https://doi.org/10.21075/kacsn.2022.24.3.245
+                        </p>
                     </div>
                 </div>
             </div>
@@ -333,6 +445,15 @@
                     <div class="card-custom">
                         <h3 class="h4 poetic-font fw-bold mb-3">몸짓으로 세상을 그리는 춤, 훌라</h3>
                         <p class="text-muted mb-4">손짓과 몸짓의 울림으로 표현하는 또 하나의 언어, 훌라 이야기입니다.</p>
+                        <div id="hula-video" class="mb-4"
+                             data-youtube-id="_-AXidoD_Go"
+                             data-title="홍보영상 · Ka Nohona Pilikai (카 노호나 필리카이)">
+                            <button type="button" class="video-thumb" aria-label="훌라 홍보영상 재생"
+                                    style="background-image: linear-gradient(rgba(45,49,46,0.25), rgba(45,49,46,0.45)), url('https://i.ytimg.com/vi/_-AXidoD_Go/hqdefault.jpg'); background-size: cover; background-position: center;">
+                                <span class="play-circle"><i class="bi bi-play-fill"></i></span>
+                                <span class="video-caption">카 노호나 필리카이 · 홍보영상</span>
+                            </button>
+                        </div>
                         <div>
                             <span class="tag">훌라 공연</span>
                             <span class="tag">신체 표현</span>
@@ -410,5 +531,31 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 모바일: 메뉴 항목을 누르면 펼쳐진 메뉴를 닫음
+        document.querySelectorAll('#navbarNav .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                var menu = document.getElementById('navbarNav');
+                if (menu.classList.contains('show')) {
+                    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+                }
+            });
+        });
+
+        // 훌라 영상: 클릭하면 그 자리에서 바로 재생 (유튜브 임베드, 다운로드 버튼 없음)
+        (function () {
+            var box = document.getElementById('hula-video');
+            var thumb = box.querySelector('.video-thumb');
+            thumb.addEventListener('click', function () {
+                var id = box.dataset.youtubeId;
+                box.innerHTML =
+                    '<div class="video-frame">' +
+                    '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1" ' +
+                    'title="' + box.dataset.title + '" ' +
+                    'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>' +
+                    '</div>';
+            });
+        })();
+    </script>
 </body>
 </html>
