@@ -83,11 +83,15 @@
         }
 
         .poetic-title {
-            font-size: 2rem;
+            font-size: clamp(1.2rem, 5.4vw, 2rem);
             font-weight: 700;
             color: var(--text-main);
             line-height: 1.5;
             margin-bottom: 1.5rem;
+        }
+
+        .poetic-title .title-line {
+            white-space: nowrap;
         }
 
         .poetic-subtitle {
@@ -271,7 +275,7 @@
                 <ul class="navbar-nav ms-auto gap-2">
                     <li class="nav-item"><a class="nav-link" href="#experience">경력</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">연구 · 교재</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sign-media">수어 교육 유튜브</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sign-media">수어교육 영상</a></li>
                     <li class="nav-item"><a class="nav-link" href="#hula">훌라</a></li>
                     <li class="nav-item"><a class="nav-link" href="#interests">관심사</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">문의</a></li>
@@ -287,7 +291,8 @@
                     <img src="profile.webp" alt="이율리 프로필 사진">
                 </div>
                 <h1 class="poetic-title">
-                    "침묵을 넘어 손짓의 언어로,<br class="d-none d-md-inline"> 세상을 그리는 몸짓의 자유로."
+                    <span class="title-line">"침묵을 넘어 손짓의 언어로,</span><br>
+                    <span class="title-line">세상을 그리는 몸짓의 자유로."</span>
                 </h1>
                 <p class="poetic-subtitle mt-3 mb-4">
                     경계를 허물고, 교육과 삶을 잇는 청각장애아교육 박사 · 초등교사 이율리입니다.
@@ -323,7 +328,7 @@
                         <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-journal-bookmark me-2 text-warning"></i>강의 경력</h3>
                         <div class="timeline-item">
                             <div class="timeline-date">2021 ~ 현재</div>
-                            <div>대구교대 국립대학육성사업 수어 기반 청각장애학생 이해 및 의사소통 역량 강화 수어교육 강의</div>
+                            <div>대구교대 국립대학육성사업 수어 기반 청각장애학생 이해 및 의사소통 역량 강화 교육 강의</div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">2019 ~ 현재</div>
@@ -369,11 +374,11 @@
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">2021</div>
-                            <div>셰어(SHARE) 연속포럼 '차별금지법 성·재생산권리보장기본법 크로-쓰✨' 수어통역</div>
+                            <div>셰어(SHARE) 연속포럼 '차별금지법 성·재생산권리보장기본법' 수어통역</div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">2020 ~ 현재</div>
-                            <div>경북교육청 유튜브 영상 수어통역</div>
+                            <a class="title-link" href="https://www.youtube.com/watch?v=1k_zWsloI1A" target="_blank" rel="noopener">경북교육청 유튜브 영상 수어통역 다수<i class="bi bi-box-arrow-up-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -385,6 +390,27 @@
         <div class="container">
             <h2 class="section-title">연구 및 교재 (Research & Publications)</h2>
             <div class="row g-4">
+                <div class="col-12">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-journal-text me-2 text-warning"></i>학술지 논문</h3>
+                        <p class="apa-ref">
+                            <strong>이율리</strong>, 이현미, 허세영 (2026).
+                            예비 초등교사의 전공 배경에 따른 청각장애학생 통합교육 인식, 장애이해, 교수학습 인식 및 교육적 실천의지의 차이와 영향요인 분석.
+                            <em>통합교육연구, 21</em>(2), 211–231.
+                        </p>
+                        <p class="apa-ref">
+                            <strong>이율리</strong>, 황수미, 이현미 (2023).
+                            <a class="title-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002954062" target="_blank" rel="noopener">초등학교 교사가 인식하는 수어, 청각장애, 농정체성에 대한 관계 연구<i class="bi bi-box-arrow-up-right"></i></a>.
+                            <em>한국청각언어장애교육연구, 14</em>(1), 41–61.
+                        </p>
+                        <p class="apa-ref">
+                            이태형, 홍정숙, <strong>이율리</strong>, 홍진희 (2022).
+                            <a class="title-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002877753" target="_blank" rel="noopener">개별화교육계획 실행을 통한 평가와 지원요구에 대한 초등학교 통합학급교사의 인식<i class="bi bi-box-arrow-up-right"></i></a>.
+                            <em>특수아동교육연구, 24</em>(3), 245–272.
+                        </p>
+                    </div>
+                </div>
+
                 <div class="col-md-6">
                     <div class="card-custom">
                         <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-mortarboard me-2 text-warning"></i>학위 논문 실적</h3>
@@ -404,30 +430,12 @@
                         <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-book me-2 text-warning"></i>국정도서 편찬</h3>
                         <div class="timeline-item">
                             <div class="timeline-date">2022 개정 교육과정</div>
-                            <div class="fw-bold">초등 5~6학년군 국정도서 (국어 (청각장애)) 편찬</div>
+                            <div class="fw-bold">초등 5~6학년군 국정도서 국어(청각장애) 집필</div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">2022 개정 교육과정</div>
-                            <div class="fw-bold">초등 1~2학년군 국정도서 편찬 집필 및 참여</div>
+                            <div class="fw-bold">초등 1~2학년군 국정도서 국어(청각장애) 집필</div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="card-custom">
-                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-journal-text me-2 text-warning"></i>학술지 논문</h3>
-                        <p class="apa-ref">
-                            <strong>이율리</strong>, 황수미, 이현미 (2023).
-                            <a class="title-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002954062" target="_blank" rel="noopener">초등학교 교사가 인식하는 수어, 청각장애, 농정체성에 대한 관계 연구<i class="bi bi-box-arrow-up-right"></i></a>.
-                            <em>한국청각언어장애교육연구, 14</em>(1), 41–61.
-                            https://doi.org/10.24009/ksehli.2023.14.1.003
-                        </p>
-                        <p class="apa-ref">
-                            이태형, 홍정숙, <strong>이율리</strong>, 홍진희 (2022).
-                            <a class="title-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002877753" target="_blank" rel="noopener">개별화교육계획 실행을 통한 평가와 지원요구에 대한 초등학교 통합학급교사의 인식<i class="bi bi-box-arrow-up-right"></i></a>.
-                            <em>특수아동교육연구, 24</em>(3), 245–272.
-                            https://doi.org/10.21075/kacsn.2022.24.3.245
-                        </p>
                     </div>
                 </div>
             </div>
@@ -436,7 +444,7 @@
 
     <section id="sign-media">
         <div class="container">
-            <h2 class="section-title">수어 교육 유튜브 (Sign Language Media)</h2>
+            <h2 class="section-title">수어교육 영상 (Sign Language Media)</h2>
             <div class="card-custom text-center py-5">
                 <i class="bi bi-youtube display-3 text-danger mb-3"></i>
                 <h3 class="h4 poetic-font fw-bold">경북교육청 수어교육 동영상 시리즈 (총 20편)</h3>
