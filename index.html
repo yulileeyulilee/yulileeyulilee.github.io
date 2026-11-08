@@ -94,6 +94,54 @@
             white-space: nowrap;
         }
 
+        .hero-section .poetic-title {
+            font-family: 'Gowun Batang', serif;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-name {
+            font-family: 'Gowun Batang', serif;
+            font-size: clamp(2.2rem, 9vw, 3rem);
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            margin: 0 0 1.2rem;
+            padding-left: 0.15em;
+            color: var(--text-main);
+        }
+
+        .hero-roles {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            color: var(--accent-olive);
+            line-height: 2;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: baseline;
+            gap: 0.7rem;
+            min-width: 0;
+        }
+
+        .brand-tagline {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            white-space: nowrap;
+            padding-left: 0.7rem;
+            border-left: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 400px) {
+            .navbar-brand { gap: 0.5rem; }
+            .brand-tagline { font-size: 0.72rem; padding-left: 0.5rem; }
+        }
+
         .poetic-subtitle {
             font-size: 1.15rem;
             color: var(--text-muted);
@@ -290,7 +338,10 @@
 
     <nav class="navbar navbar-expand-lg sticky-top navbar-light">
         <div class="container">
-            <a class="navbar-brand poetic-font fw-bold" href="#">이율리</a>
+            <a class="navbar-brand poetic-font" href="#">
+                <span class="fw-bold">이율리</span>
+                <span class="brand-tagline">경계를 허물다, 교육과 삶을 잇다.</span>
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -311,16 +362,19 @@
     <div class="hero-section text-center container">
         <div class="row justify-content-center w-100">
             <div class="col-lg-9">
+                <p class="poetic-title">
+                    <span class="title-line">"침묵을 넘어 손짓의 언어로,</span><br>
+                    <span class="title-line">세상을 그리는 몸짓의 자유로."</span>
+                </p>
                 <div class="profile-img-container">
                     <img src="profile.webp" alt="이율리 프로필 사진">
                 </div>
-                <h1 class="poetic-title">
-                    <span class="title-line">"침묵을 넘어 손짓의 언어로,</span><br>
-                    <span class="title-line">세상을 그리는 몸짓의 자유로."</span>
-                </h1>
-                <p class="poetic-subtitle mt-3 mb-4">
-                    경계를 허물고, 교육과 삶을 잇는 청각장애아교육 박사 · 초등교사 이율리입니다.
-                </p>
+                <h1 class="hero-name" aria-label="이율리">이 율 리</h1>
+                <ul class="hero-roles">
+                    <li>초등교사</li>
+                    <li>청각장애아교육 박사</li>
+                    <li>수어통역사</li>
+                </ul>
             </div>
         </div>
     </div>
