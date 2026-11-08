@@ -201,6 +201,29 @@
 
         .apa-ref:last-child { margin-bottom: 0; }
 
+        .community-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .community-list li {
+            position: relative;
+            padding-left: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .community-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7em;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--accent-warm);
+        }
+
         .video-thumb {
             position: relative;
             display: flex;
@@ -278,6 +301,7 @@
                     <li class="nav-item"><a class="nav-link" href="#sign-media">수어교육 영상</a></li>
                     <li class="nav-item"><a class="nav-link" href="#hula">훌라</a></li>
                     <li class="nav-item"><a class="nav-link" href="#interests">관심사</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#communities">함께하는 곳</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">문의</a></li>
                 </ul>
             </div>
@@ -355,6 +379,10 @@
                         <div class="timeline-item">
                             <div class="timeline-date">2026</div>
                             <div>제주퀴어문화축제 수어통역</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2026</div>
+                            <div>3.8 세계여성의날 대구경북여성대회 수어통역</div>
                         </div>
                         <div class="timeline-item">
                             <div class="timeline-date">2020 ~ 2026</div>
@@ -511,6 +539,43 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="communities">
+        <div class="container">
+            <h2 class="section-title">함께하는 곳 (Communities)</h2>
+            <p class="text-muted mb-4">관심을 삶으로 잇기 위해, 이런 곳들과 함께 걷고 있습니다.</p>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h3 class="h6 fw-bold mb-3 poetic-font"><i class="bi bi-hand-index-thumb me-2 text-warning"></i>농인 · 장애</h3>
+                        <ul class="community-list">
+                            <li>대구농아인봉사단</li>
+                            <li>장애여성공감</li>
+                            <li>전국장애인차별철폐연대</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h3 class="h6 fw-bold mb-3 poetic-font"><i class="bi bi-flower1 me-2 text-warning"></i>여성 · 환경 · 문화</h3>
+                        <ul class="community-list">
+                            <li>여성환경연대</li>
+                            <li>여성주의문화운동단체 로컬에프</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h3 class="h6 fw-bold mb-3 poetic-font"><i class="bi bi-lightbulb me-2 text-warning"></i>교육</h3>
+                        <ul class="community-list">
+                            <li>경북혁신교육연구소 공감</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="small text-muted mt-3 mb-0">* 위 단체의 회원으로 활동하고 있습니다.</p>
         </div>
     </section>
 
