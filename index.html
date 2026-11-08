@@ -1,39 +1,414 @@
-Popular repositoriesLoading
-yulileeyulilee.github.io
-Public
-청각장애아교육 박사·초등교사 이율리 개인 포트폴리오 웹사이트
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이율리 | 청각장애아교육 박사 · 초등교사</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
- HTML
+        :root {
+            --bg-color: #FAF8F5;
+            --card-bg: #FFFFFF;
+            --text-main: #2D312E;
+            --text-muted: #666C67;
+            --accent-warm: #8C6D58;
+            --accent-olive: #5C6B57;
+            --accent-light: #F2ECE4;
+            --border-color: #E8E2D9;
+        }
 
-3 contributions in the last year
-Contribution Graph
-Day of Week	NovemberNov	DecemberDec	JanuaryJan	FebruaryFeb	MarchMar	AprilApr	MayMay	JuneJun	JulyJul	AugustAug	SeptemberSep	OctoberOct	NovemberNov
-SundaySun																																																					
-MondayMon																																																					
-TuesdayTue																																																					
-WednesdayWed																																																					
-ThursdayThu																																																					
-FridayFri																																																					
-SaturdaySat																																																					
-Learn how we count contributions
-Less
-No contributions.
-Low contributions.
-Medium-low contributions.
-Medium-high contributions.
-High contributions.
-More
-Contribution activity
-November 2026
-yulileeyulilee/yulileeyulilee.github.io
-1 commit
-Created their first repository
-Nov 8
-Congratulations on your first repository!
-First repository
- yulileeyulilee.github.io Public
-Joined GitHub
-Joined GitHub!
-Joined GitHub
-on November 8, 2026
-Seeing something unexpected? Take a look at the GitHub profile guide.
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            word-break: keep-all;
+        }
+
+        h1, h2, h3, .poetic-font { font-family: 'Gowun Batang', serif; }
+
+        .navbar {
+            background-color: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
+
+        .profile-img-container {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: var(--accent-light);
+            border: 3px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+        }
+
+        .poetic-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .poetic-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        section {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            color: var(--text-main);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-warm);
+            opacity: 0.5;
+        }
+
+        .card-custom {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.8rem;
+            height: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 2px solid var(--accent-light);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent-warm);
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--accent-olive);
+            font-weight: 600;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--accent-light);
+            color: var(--accent-warm);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 0.4rem;
+            margin-bottom: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand poetic-font fw-bold" href="#">이율리</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#experience">경력</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">연구 · 교재</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sign-media">수어 교육 유튜브</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hula">훌라</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">관심사</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">문의</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section text-center container">
+        <div class="row justify-content-center w-100">
+            <div class="col-lg-9">
+                <div class="profile-img-container">
+                    <i class="bi bi-person text-muted display-4"></i>
+                </div>
+                <h1 class="poetic-title">
+                    "침묵을 넘어 손짓의 언어로,<br class="d-none d-md-inline"> 세상을 그리는 몸짓의 자유로."
+                </h1>
+                <p class="poetic-subtitle mt-3 mb-4">
+                    경계를 허물고, 교육과 삶을 잇는 청각장애아교육 박사 · 초등교사 이율리입니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">경력 (Experience)</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-building me-2 text-warning"></i>근무 경력</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2026 ~ 현재</div>
+                            <div>대구포산초등학교 재직</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 ~ 2025</div>
+                            <div>경북 신동초등학교 재직</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2017 ~ 2021</div>
+                            <div>경북 동명초등학교 재직</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-journal-bookmark me-2 text-warning"></i>강의 경력</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 ~ 현재</div>
+                            <div>대구교대 국립대학육성사업 수어 기반 청각장애학생 이해 및 의사소통 역량 강화 수어교육 강의</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 ~ 현재</div>
+                            <div>대구교대 시청각장애아 및 의사소통장애아 교육 / 특수교육학개론 강의</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025 ~ 2026</div>
+                            <div>경북 문화관광해설사 신규교육 '청각장애인의 이해' 강의</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022</div>
+                            <div>경북교육청 장애인식개선사업 수어 강의</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2017 ~ 현재</div>
+                            <div>학교 현장 학생 대상 수어동아리 매년 운영</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-hand-index-thumb me-2 text-warning"></i>수어통역 경력</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2026</div>
+                            <div>제주퀴어문화축제 수어통역</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 ~ 2026</div>
+                            <div>대구퀴어문화축제 수어통역</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 ~ 2025</div>
+                            <div>경북교육청 스승의날 기념행사 수어통역</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 ~ 현재</div>
+                            <div>전교조 전국교사대회 및 집회 수어통역 다수</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021, 2022</div>
+                            <div>한국전력공사 필기시험 수어통역</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021</div>
+                            <div>셰어(SHARE) 연속포럼 '차별금지법 성·재생산권리보장기본법 크로-쓰✨' 수어통역</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 ~ 현재</div>
+                            <div>경북교육청 유튜브 영상 수어통역</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2 class="section-title">연구 및 교재 (Research & Publications)</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-mortarboard me-2 text-warning"></i>학위 논문 실적</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">박사 학위</div>
+                            <div class="fw-bold">청각장애아교육 박사 학위 논문</div>
+                            <small class="text-muted">(논문 제목 업데이트 예정)</small>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">석사 학위</div>
+                            <div class="fw-bold">석사 학위 논문</div>
+                            <small class="text-muted">(논문 제목 업데이트 예정)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-custom">
+                        <h3 class="h5 fw-bold mb-3 poetic-font"><i class="bi bi-book me-2 text-warning"></i>국정도서 편찬</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 개정 교육과정</div>
+                            <div class="fw-bold">초등 5~6학년군 국정도서 (국어 (청각장애)) 편찬</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 개정 교육과정</div>
+                            <div class="fw-bold">초등 1~2학년군 국정도서 편찬 집필 및 참여</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sign-media">
+        <div class="container">
+            <h2 class="section-title">수어 교육 유튜브 (Sign Language Media)</h2>
+            <div class="card-custom text-center py-5">
+                <i class="bi bi-youtube display-3 text-danger mb-3"></i>
+                <h3 class="h4 poetic-font fw-bold">경북교육청 수어교육 동영상 시리즈 (총 20편)</h3>
+                <p class="text-muted mb-4">교육 현장과 일상에서 함께 배우는 수어 콘텐츠입니다.</p>
+                <a href="https://www.youtube.com" target="_blank" class="btn btn-outline-dark rounded-pill px-4">유튜브 채널 바로가기</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hula">
+        <div class="container">
+            <h2 class="section-title">훌라 (Hula)</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="card-custom">
+                        <h3 class="h4 poetic-font fw-bold mb-3">몸짓으로 세상을 그리는 춤, 훌라</h3>
+                        <p class="text-muted mb-4">손짓과 몸짓의 울림으로 표현하는 또 하나의 언어, 훌라 이야기입니다.</p>
+                        <div>
+                            <span class="tag">훌라 공연</span>
+                            <span class="tag">신체 표현</span>
+                            <span class="tag">기초~심화 워크숍</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="container">
+            <h2 class="section-title">내 관심사 (Interests)</h2>
+            <div class="row g-3">
+                <div class="col-md-3 col-6">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-heart-fill fs-2 text-warning mb-2"></i>
+                        <h4 class="h6 fw-bold">장애인차별철폐 & 인권</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-translate fs-2 text-warning mb-2"></i>
+                        <h4 class="h6 fw-bold">수어의 확장 & 언어학 연구</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-hand-thumbs-up fs-2 text-warning mb-2"></i>
+                        <h4 class="h6 fw-bold">몸짓과 손짓의 위대함</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card-custom text-center">
+                        <i class="bi bi-music-note-beamed fs-2 text-warning mb-2"></i>
+                        <h4 class="h6 fw-bold">춤, 훌라(Hula) 및 신체 표현</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="border-bottom-0">
+        <div class="container">
+            <h2 class="section-title">강의 문의 & 질문 (Contact)</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card-custom">
+                        <form action="https://formspree.io/f/xbjnqvzy" method="POST">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">이름</label>
+                                <input type="text" name="name" class="form-control" required placeholder="성함을 입력해주세요">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">이메일</label>
+                                <input type="email" name="email" class="form-control" required placeholder="답변받으실 이메일 주소">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">문의 내용</label>
+                                <textarea name="message" class="form-control" rows="5" required placeholder="강의 요청, 질문 또는 건의사항을 남겨주세요."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 py-2 rounded-3">메시지 보내기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center text-muted border-top">
+        <div class="container">
+            <small>© 2026 이율리. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
